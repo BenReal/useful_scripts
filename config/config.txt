@@ -1,0 +1,6 @@
+inpath:文献资源网站2022年12月12日.docx
+outpath:文献资源网站2022年12月12日.xlsx
+min_length_para:12
+min_length_sent:6
+min_dist:8
+max_common:14
