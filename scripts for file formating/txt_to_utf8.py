@@ -19,8 +19,8 @@ import chardet
 log_file_path = r'../logs/app.log'
 configure_logging(log_file_path)
 
-# # 记录日志信息
-# logging.info('程序开始运行')
+# 记录日志信息
+logging.info('程序开始运行')
 
 
 def convert_encoding_to_utf8(path):
@@ -86,7 +86,7 @@ def convert_all_txts_to_utf8(path):
 if __name__ == '__main__':
 
     # 指定文件夹路径
-    folder_path = r"./log"
+    folder_path = r"H:\mycodes\logs"
 
     # 将所有txt文件的编码格式转换成utf-8
     convert_all_txts_to_utf8(folder_path)
