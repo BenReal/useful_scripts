@@ -52,7 +52,7 @@ def move_files(df, root_folder):
 
 def main():
     # 读取Excel文件
-    df = pd.read_excel("./config/move_file.xlsx")
+    df = pd.read_excel("./useful_scripts/config/move_file.xlsx")
 
     # 指定根文件夹路径
     root_folder = "H:\《XXXX》《XXXX》2023年10月27日\数据库补充资料\科研机构（分拆）\转换完成"

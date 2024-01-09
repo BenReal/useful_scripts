@@ -139,7 +139,7 @@ class SimHash(object):
 
 if __name__ == "__main__":
 
-    with codecs.open('./config/config.txt', 'r', encoding='utf8') as configs:
+    with codecs.open('./useful_scripts/config/config.txt', 'r', encoding='utf8') as configs:
         lines = configs.readlines()
         dic = {}
         for line in lines:

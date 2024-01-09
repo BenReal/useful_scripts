@@ -72,7 +72,7 @@ if __name__ == '__main__':
     # extension_add_symbol = 3 # 添加txt和pdf
 
     
-    with open("./config/files_for_move.txt", "r", encoding="utf8") as f_move:    
+    with open("./useful_scripts/config/files_for_move.txt", "r", encoding="utf8") as f_move:    
         file_lines = f_move.readlines()
         for source_folder_path in source_folder_path_list:
             if extension_add_symbol == 0:

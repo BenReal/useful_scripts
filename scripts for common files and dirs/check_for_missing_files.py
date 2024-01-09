@@ -43,7 +43,7 @@ if __name__ == '__main__':
     # file_list_path = sys.argv[1]
     # folder_path = sys.argv[2]
 
-    file_list_path = r'./config/filenames_missing_for_check.txt'
+    file_list_path = r'./useful_scripts/config/filenames_missing_for_check.txt'
     folder_path = r'D:'
 
 

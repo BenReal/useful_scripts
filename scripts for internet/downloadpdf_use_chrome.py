@@ -4,7 +4,7 @@ import os
 
 
 # 临时操作
-with open('./config/urls_pdf_for_download.txt', 'r', encoding="utf8") as f:
+with open('./useful_scripts/config/urls_pdf_for_download.txt', 'r', encoding="utf8") as f:
     lines = f.readlines()
 file_list = [line.strip() for line in lines]
 

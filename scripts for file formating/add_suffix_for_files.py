@@ -14,6 +14,7 @@ import shutil
 import logging
 import time
 from local_modules.local_functions import configure_logging
+from local_modules.local_functions import add_timestamp
 
 log_file_path = ''
 configure_logging(log_file_path)
@@ -70,12 +71,9 @@ results = add_pdf(filenames_without_suffix) + add_txt(filenames_without_suffix)
 # results = add_doc(filenames_without_suffix) + add_docx(filenames_without_suffix) + add_pdf(filenames_without_suffix) + add_txt(filenames_without_suffix)
 
 
-current_time = time.time()  # 获取当前时间的时间戳
-current_time_tuple = time.localtime(current_time)  # 将时间戳转换为本地时间的struct_time元组
-current_time_str = time.strftime("%Y-%m-%d %H:%M:%S", current_time_tuple)  # 将struct_time元组转换为字符串格式
-current_time_str = current_time_str.replace(':', '').replace(' ', '_')
+file_name = "names.txt'
+file_name = add_timestamp(file_name)
 
-file_name = "names_" + current_time_str +  '.txt'
 
 file_name = os.path.join("H:\\", file_name)
 

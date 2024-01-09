@@ -2,6 +2,7 @@ import os
 import logging
 import time
 
+
 def configure_logging(log_file_path):
     # Ensure the log directory exists
     log_dir = os.path.dirname(log_file_path)
@@ -18,9 +19,10 @@ def configure_logging(log_file_path):
     logging.getLogger('').setLevel(logging.INFO)
 
 
-
-
-
+def add_timestamp(filename):
+    base_name, extension = os.path.splitext(filename)
+    current_time_str = time.strftime("%Y%m%d_%H%M%S")
+    return f"{base_name}_{current_time_str}{extension}"
 
 
 

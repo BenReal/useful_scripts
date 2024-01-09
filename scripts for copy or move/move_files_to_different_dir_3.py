@@ -59,7 +59,7 @@ def process_row(source_folder, target_root_folder, row):
 
 def main():
     # 读取Excel文件
-    excel_path = "./config/move_file_specific.xlsx"
+    excel_path = "./useful_scripts/config/move_file_specific.xlsx"
     df = pd.read_excel(excel_path)
 
     # 获取源文件夹和目标文件夹信息

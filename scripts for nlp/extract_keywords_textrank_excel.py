@@ -5,10 +5,10 @@ from datetime import datetime
 import os
 import re
 
-with open("./config/stop_words_cn.txt", "r", encoding="utf8") as f_cn:
+with open("./useful_scripts/config/stop_words_cn.txt", "r", encoding="utf8") as f_cn:
     stop_words_cn = [line.strip() for line in f_cn.readlines() if line.strip()]
 
-with open("./config/stop_words_en.txt", "r", encoding="utf8") as f_en:
+with open("./useful_scripts/config/stop_words_en.txt", "r", encoding="utf8") as f_en:
     stop_words_en = [line.strip() for line in f_en.readlines() if line.strip()]
 
 def extract_keywords_cn(text):

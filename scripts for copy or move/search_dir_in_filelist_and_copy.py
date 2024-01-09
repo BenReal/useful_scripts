@@ -27,7 +27,7 @@ source_folder_path = r"G:\总备份"
 target_folder_path = os.path.join(source_folder_path, "重点")
 
 # 待复制文件名列表
-with open("./config/files_for_move.txt", "r", encoding="utf8") as f_copy:
+with open("./useful_scripts/config/files_for_move.txt", "r", encoding="utf8") as f_copy:
     lines_copy = f_copy.readlines()
     file_list = {line.strip() + ".pdf" for line in lines_copy if line}
 

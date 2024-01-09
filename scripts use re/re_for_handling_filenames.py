@@ -10,12 +10,13 @@ else:
     parent_dir = os.path.dirname(script_dir)
     sys.path.append(parent_dir)
 # 导入其他模块
-import shutil
 import logging
 import time
-from local_modules.local_functions import configure_logging
 import re
 import pandas as pd
+from local_modules.local_functions import configure_logging
+from local_modules.local_functions import add_timestamp
+
 
 log_file_path = r'../logs/re_for_handling_filenames.log'
 configure_logging(log_file_path)
@@ -56,13 +57,8 @@ for file_name in os.listdir(folder_path):
                 data = data.append(file_item, ignore_index=True)
 
 
-current_time = time.time()  # 获取当前时间的时间戳
-current_time_tuple = time.localtime(current_time)  # 将时间戳转换为本地时间的struct_time元组
-current_time_str = time.strftime(
-    "%Y-%m-%d %H:%M:%S", current_time_tuple)  # 将struct_time元组转换为字符串格式
-current_time_str = current_time_str.replace(':', '').replace(' ', '_')
-
-excel_file_name = "处理结果_" + current_time_str + '.xlsx'
+excel_file_name = "处理结果_.xlsx'
+excel_file_name = add_timestamp(excel_file_name)
 
 # 保存处理后的数据到Excel文件
 output_file = os.path.join(folder_path, excel_file_name)

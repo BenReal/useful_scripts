@@ -50,7 +50,7 @@ def move_folders(df, root_folder):
 
 def main():
     # 读取Excel文件
-    df = pd.read_excel("./config/move_folder.xlsx")
+    df = pd.read_excel("./useful_scripts/config/move_folder.xlsx")
 
     # 指定根文件夹路径
     root_folder = "path/to/root_folder"

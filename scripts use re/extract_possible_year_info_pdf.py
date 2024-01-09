@@ -89,7 +89,7 @@ def process_directory(directory_path):
 
 def main():
     # Configure logging with the desired encoding
-    log_file_path = rr'../logs/extract_possible_year_info_pdf.log'
+    log_file_path = r'../logs/extract_possible_year_info_pdf.log'
     configure_logging(log_file_path)
 
     start_time = time.time()

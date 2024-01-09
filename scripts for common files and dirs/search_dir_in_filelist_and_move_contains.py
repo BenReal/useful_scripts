@@ -30,7 +30,7 @@ target_folder_path = os.path.join(source_folder_path, "其他无用")
 # 待检查文件名列表
 
 
-with open("./config/files_for_move.txt", "r", encoding="utf8") as f_move:
+with open("./useful_scripts/config/files_for_move.txt", "r", encoding="utf8") as f_move:
     lines_move = f_move.readlines()
     file_list = [line.strip() for line in lines_move if line]
     file_list = [line for line in file_list if line]
