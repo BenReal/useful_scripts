@@ -25,7 +25,7 @@ start_time = time.time()
 
 logging.info('Run Time Start up')
 
-directory = r"F:\总备份\文献库"
+directory = r"F:\总备份"
 # 定义要搜索的短语列表
 with open("./useful_scripts/config/phrases_for_search.txt", "r", encoding="utf8") as f_phrases:
     lines_old = f_phrases.readlines()
@@ -98,7 +98,7 @@ def count_phrases_in_directory(directory):
 
 results = count_phrases_in_directory(directory)
 
-excel_file_name = "result.xlsx"
+excel_file_name = "词频统计.xlsx"
 excel_file_name = add_timestamp(excel_file_name)
 dir_excel_file_name = os.path.join(directory, excel_file_name)
 

@@ -46,7 +46,7 @@ def main():
     start_time = time.time()
 
     # Define source and destination folders
-    src_dir = r"F:\总备份"
+    src_dir = r"G:\国外无人机分布式自主蜂群及其反制2023年11月29日\MQ-9死神无人机"
     src_dir = os.path.normpath(src_dir)
     type_for_check = '.pdf'
     # type_for_check = '.txt'
@@ -86,7 +86,7 @@ def main():
                     existing_file_len = len(os.path.basename(existing_file_path))
                     new_file_len = len(os.path.basename(file))
 
-                    if existing_file_len > new_file_len:
+                    if existing_file_len < new_file_len:
                         logging.info(f"File '{existing_file_path}' is a duplicate of '{file_path}'. Moved '{existing_file_path}' to the destination folder.")
                         # print(f"File '{existing_file_path}' is a duplicate of '{file_path}'. Moved '{existing_file_path}' to the destination folder.")
                         if not move_file(existing_file_path, dst_dir):

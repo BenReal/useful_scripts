@@ -1,4 +1,8 @@
 import PyPDF2
+from pdfminer.pdfparser import PDFParser
+from pdfminer.pdfdocument import PDFDocument
+from pdfminer.pdfparser import PDFSyntaxError
+
 
 def read_pdf_metadata(pdf_path):
     """
@@ -8,12 +12,47 @@ def read_pdf_metadata(pdf_path):
         pdf_path (str): The path to the PDF file.
 
     Returns:
-        dict: Metadata information.
+        dict: Metadata information or an empty dictionary if metadata is not present or an error occurs.
     """
-    with open(pdf_path, 'rb') as pdf_file:
-        pdf_reader = PyPDF2.PdfReader(pdf_file)
-        metadata = pdf_reader.metadata
-        return metadata
+    try:
+        with open(pdf_path, 'rb') as pdf_file:
+            parser = PDFParser(pdf_file)
+            document = PDFDocument(parser)
+            metadata = document.info
+            if metadata:
+                # 由于metadata的数据类型是列表list，仅有一个元素，是一个字典
+                return metadata[0]
+            else:
+                return {}
+    except PDFSyntaxError as e:
+        print(f"Error parsing PDF: {e}")
+        return {}
+    except FileNotFoundError as e:
+        print(f"File not found: {pdf_path}")
+        return {}
+    except Exception as e:
+        print(f"Error occurred while reading PDF metadata: {e}")
+        return {}
+
+# def read_pdf_metadata(pdf_path):
+#     """
+#     Read metadata information from a PDF file.
+
+#     Args:
+#         pdf_path (str): The path to the PDF file.
+
+#     Returns:
+#         dict: Metadata information.
+#     """
+
+#     with open(pdf_path, 'rb') as pdf_file:
+#         pdf_reader = PyPDF2.PdfReader(pdf_file)
+#         metadata = pdf_reader.metadata
+#         if metadata:
+#             return metadata
+#         else:
+#             return {}  # 或者根据需求返回适当的默认值
+
 
 def read_pdf_headers_and_footers(pdf_path):
     """
@@ -61,13 +100,9 @@ Requirements:
     - PyPDF2 library
     - PyCryptodome library (for decryption, if applicable)
 
-Usage Example:
-    C:/Python312/python.exe h:/mycodes/sc1_for_tes.py
-
 Output:
     - Metadata information including Author, Title, Subject, etc.
     - Headers and footers information for each page.
-
 Note:
     - If you encounter the "DependencyError: PyCryptodome is required for AES algorithm" error,
       install the PyCryptodome library using 'pip install pycryptodome'.
@@ -78,3 +113,9 @@ Note:
     - The script may raise a DeprecationError related to PyPDF2 methods. In such cases, follow
       the suggested replacement in the comments.
 """
+
+
+# 使用了 pdfminer.six 库的 PDFParser 和 PDFDocument 类来解析 PDF 文件并获取元数据。
+# 请确保您已经安装了所需的库，您可以使用以下命令来安装 pdfminer.six：
+# pip install pdfminer.six
+# 如果问题仍然存在或您有其他疑问，请提供更多细节，以便我可以更好地帮助您。

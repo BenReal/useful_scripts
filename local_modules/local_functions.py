@@ -25,4 +25,14 @@ def add_timestamp(filename):
     return f"{base_name}_{current_time_str}{extension}"
 
 
+def calculate_run_time(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        result = func(*args, **kwargs)
+        end_time = time.time()
+        run_time = end_time - start_time
+        print("程序运行时间：{}秒".format(run_time))
+        return result
+    return wrapper
+
 

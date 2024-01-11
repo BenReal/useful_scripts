@@ -1,7 +1,18 @@
 import os
+import sys
+# 获取当前脚本所在目录
+script_dir = os.path.dirname(os.path.abspath(__file__))
+# 如果当前目录是 'useful_scripts'，将当前目录加入搜索路径，否则，将父目录加入搜索路径
+if os.path.basename(script_dir) == 'useful_scripts':
+    sys.path.append(script_dir)
+else:
+    parent_dir = os.path.dirname(script_dir)
+    sys.path.append(parent_dir)
+# 导入其他模块
 import pandas as pd
 import shutil
 import fitz
+from local_modules.local_functions import add_timestamp
 
 
 def count_pdf_pages(folder_path):
@@ -40,11 +51,12 @@ def count_pdf_pages(folder_path):
     return df
 
 
-folder_path = r"H:\《XXXX》《XXXX》2023年10月27日\数据库补充资料\科研机构（分拆）\转换完成"
+folder_path = r"F:\总备份"
 result_df = count_pdf_pages(folder_path)
 
 
-output_file = os.path.join(folder_path, "pdf文档页数统计.xlsx")
+output_file = os.path.join(folder_path, "pdf页数统计.xlsx")
+output_file = add_timestamp(output_file)
 result_df.to_excel(output_file, index=False)
 
 
