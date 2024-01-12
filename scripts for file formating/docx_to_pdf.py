@@ -34,6 +34,6 @@ folder_path = "H:\《XXXX》《XXXX》2023年10月27日\研究成果——项目
 convert_folder_to_pdf(folder_path)
 
 
-# 本程序使用docx2pdf，由于位置原因，转换成功率比较低。程序运行中会调用office程序。
+# 本程序使用docx2pdf，由于未知原因，转换成功率比较低。程序运行中会调用office程序。
 
 

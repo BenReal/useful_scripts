@@ -14,6 +14,7 @@ import hashlib
 import logging
 import time
 from local_modules.local_functions import configure_logging
+from local_modules.local_functions import calculate_sha256
 
 
 def move_file(src, dst):
@@ -46,7 +47,7 @@ def main():
     start_time = time.time()
 
     # Define source and destination folders
-    src_dir = r"G:\国外无人机分布式自主蜂群及其反制2023年11月29日\MQ-9死神无人机"
+    src_dir = r"H:\测试"
     src_dir = os.path.normpath(src_dir)
     type_for_check = '.pdf'
     # type_for_check = '.txt'
@@ -76,7 +77,7 @@ def main():
                         print(f"文本长度：{len_file_content}，不进行比对：{file_path}")
                         continue
                     else:
-                        file_hash = hashlib.md5(file_content).hexdigest()
+                        file_hash = calculate_sha256(file_content)
 
                 # Check if the hash value already exists in the dictionary
                 if file_hash in file_dict:

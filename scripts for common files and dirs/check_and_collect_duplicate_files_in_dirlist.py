@@ -14,7 +14,7 @@ import hashlib
 import logging
 import time
 from local_modules.local_functions import configure_logging
-
+from local_modules.local_functions import calculate_sha256
 
 def move_file(src, dst):
     try:
@@ -78,7 +78,7 @@ def main():
                             print(f"文本长度：{len_file_content}，不进行比对：{file_path}")
                             continue
                         else:
-                            file_hash = hashlib.md5(file_content).hexdigest()
+                            file_hash = calculate_sha256(file_content)
 
                     # Check if the hash value already exists in the dictionary
                     if file_hash in file_dict:

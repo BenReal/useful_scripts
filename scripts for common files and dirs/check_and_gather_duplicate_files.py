@@ -14,6 +14,7 @@ import hashlib
 import logging
 import time
 from local_modules.local_functions import configure_logging
+from local_modules.local_functions import calculate_sha256
 
 log_file_path = r'../logs/app.log'
 configure_logging(log_file_path)
@@ -43,7 +44,7 @@ for root, dirs, files in os.walk(src_dir):
         # 计算文件的哈希值
         with open(file_path, 'rb') as f:
             file_content = f.read()
-            file_hash = hashlib.md5(file_content).hexdigest()
+            file_hash = calculate_sha256(file_content)
 
         # 如果哈希值已经存在于字典中，则说明当前文件内容与之前的某个文件内容相同，将其加入重复文件列表中
         if file_hash in file_dict:
