@@ -42,11 +42,10 @@ def calculate_sha256(file_content):
     return sha256_hash
 
 
-
-
 def calculate_md5(file_content):
     md5_hash = hashlib.md5(file_content).hexdigest()
     return md5_hash
+
 
 # 对于函数 calculate_sha256(file_content) 和 calculate_md5(file_content)，参数 file_content可以有不同的表示形式。
 # 常见的文件内容表示形式包括：
