@@ -28,7 +28,8 @@ def timing_decorator(func):
         return result
     return wrapper
 
-def process_file(file_path, result_dict):
+def process_file(file_path, result_dict, num_files):
+    print(f"进度：{len(result_dict)} / {num_files}, 正在处理：{file_path}")
     try:
         with open(file_path, "rb") as f:
             content = f.read()
@@ -39,16 +40,17 @@ def process_file(file_path, result_dict):
         
 @timing_decorator
 def main():
-    input_directory_path = Path("/Users/zhishui/god/【英语】/中英对照")
-    output_directory_path = Path("/Users/zhishui/god/【英语】/中英对照")
+    input_directory_path = Path("F:\总备份\文献库")
+    output_directory_path = Path("F:\总备份\文献库")
     file_type = r'.pdf'
     # file_type = r'.txt'
     result_dict = Manager().dict()
+    num_files = sum(1 for _ in input_directory_path.rglob(f"*{file_type}"))
 
     # Using Pool for multiprocessing
     with Pool() as pool:
         files = [file for file in input_directory_path.rglob("*") if file.is_file() and file.suffix.lower() == file_type]
-        pool.starmap(process_file, [(file, result_dict) for file in files])
+        pool.starmap(process_file, [(file, result_dict, num_files) for file in files])
 
     # list(result_dict.items()) 会得到一个包含 result_dict 中所有键值对的列表。具体来说，result_dict.items() 返回一个由键值对组成的视图对象，然后通过 list() 转换成列表。
     # 每个键值对是一个元组，形式为 (key, value)。这个操作将字典的所有键值对转化为一个列表，其中每个元素都是字典中的一个键值对。
