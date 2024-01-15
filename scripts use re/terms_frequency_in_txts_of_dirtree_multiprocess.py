@@ -23,6 +23,7 @@ else:
 # 导入其他模块
 from local_modules.local_functions import configure_logging, add_timestamp
 
+
 # 装饰器：记录函数运行时间
 def timing_decorator(func):
     def wrapper(*args, **kwargs):
@@ -63,7 +64,6 @@ def count_phrases_in_file_partial(file_path, patterns, phrases, result_dicts, nu
         print(f"文件存在未知问题：{file_path.name} - {str(e)}")
 
 
-
 # 统计目录中所有txt文件中短语出现的次数
 def count_phrases_in_directory_parallel(directory, patterns, phrases, file_type):
     num_files = sum(1 for _ in directory.rglob(f"*{file_type}"))
@@ -78,13 +78,14 @@ def count_phrases_in_directory_parallel(directory, patterns, phrases, file_type)
 
     return results
 
+
 # 装饰器应用：记录函数运行时间
 @timing_decorator
 def main():
     script_dir = Path(__file__).resolve().parent
     phrases_file_path = Path(script_dir.parent / "config" / "phrases_for_search.txt")
     # 要搜索的目录
-    directory = Path("/Users/zhishui/god/【it】/abc")
+    directory = Path("H:\测试")
     file_type = '.txt'
     phrases = read_phrases(phrases_file_path)
     patterns = compile_patterns(phrases)
@@ -95,6 +96,7 @@ def main():
     excel_file_name = add_timestamp(excel_file_name)
     excel_path = directory / excel_file_name
     results.to_excel(excel_path, index=False)
+
 
 if __name__ == "__main__":
     # 配置日志

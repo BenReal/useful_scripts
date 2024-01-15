@@ -97,7 +97,7 @@ def convert_pdf_to_txt_parallel(file_path):
 
 if __name__ == '__main__':
     multiprocessing.freeze_support()  # Add this line
-    folder_path = r"F:\美国国防高级研究计划局（DARPA）"
+    folder_path = r"H:\测试"
     folder_path = os.path.normpath(folder_path)
 
     file_list = []
