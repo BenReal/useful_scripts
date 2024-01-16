@@ -85,7 +85,7 @@ def main():
     script_dir = Path(__file__).resolve().parent
     phrases_file_path = Path(script_dir.parent / "config" / "phrases_for_search.txt")
     # 要搜索的目录
-    directory = Path("H:\测试")
+    directory = Path("F:\总备份")
     file_type = '.txt'
     phrases = read_phrases(phrases_file_path)
     patterns = compile_patterns(phrases)

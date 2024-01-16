@@ -47,7 +47,7 @@ def main():
     start_time = time.time()
 
     # Define source and destination folders
-    src_dir = r"H:\测试"
+    src_dir = r"G:\专题：无人抢滩登陆作战"
     src_dir = os.path.normpath(src_dir)
     type_for_check = '.pdf'
     # type_for_check = '.txt'
@@ -89,16 +89,16 @@ def main():
 
                     if existing_file_len < new_file_len:
                         logging.info(f"File '{existing_file_path}' is a duplicate of '{file_path}'. Moved '{existing_file_path}' to the destination folder.")
-                        # print(f"File '{existing_file_path}' is a duplicate of '{file_path}'. Moved '{existing_file_path}' to the destination folder.")
+                        print(f"File '{existing_file_path}' is a duplicate of '{file_path}'. Moved '{existing_file_path}' to the destination folder.")
                         if not move_file(existing_file_path, dst_dir):
-                            # print(f"Failed to move file '{existing_file_path}' to the destination folder.")
+                            print(f"Failed to move file '{existing_file_path}' to the destination folder.")
                             continue
                         file_dict[file_hash] = file_path
                     else:
                         logging.info(f"File '{file_path}' is a duplicate of '{existing_file_path}'. Moved '{file_path}' to the destination folder.")
-                        # print(f"File '{file_path}' is a duplicate of '{existing_file_path}'. Moved '{file_path}' to the destination folder.")
+                        print(f"File '{file_path}' is a duplicate of '{existing_file_path}'. Moved '{file_path}' to the destination folder.")
                         if not move_file(file_path, dst_dir):
-                            # print(f"Failed to move file '{file_path}' to the destination folder.")
+                            print(f"Failed to move file '{file_path}' to the destination folder.")
                             continue                       
 
                 else:

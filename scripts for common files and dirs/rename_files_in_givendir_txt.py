@@ -2,17 +2,17 @@ import os
 
 
 # 获取当前目录
-root_path = r"H:\认知战2023年11月8日A\认知战"
+root_path = r"G:\专题：无人抢滩登陆作战\新建文件夹\重点"
 
-with open("./useful_scripts/config/names_old.txt", "r", encoding="utf8") as f_old:
+with open("./config/names_old.txt", "r", encoding="utf8") as f_old:
     lines_old = f_old.readlines()
     old_names = [line.strip() for line in lines_old if line]
-    print(old_names)
+    # print(old_names)
 
-with open("./useful_scripts/config/names_new.txt", "r", encoding="utf8") as f_new:
+with open("./config/names_new.txt", "r", encoding="utf8") as f_new:
     lines_new = f_new.readlines()
     new_names = [line.strip() for line in lines_new if line]
-    print(new_names)
+    # print(new_names)
 
 
 def check_string_lists(old_names, new_names):

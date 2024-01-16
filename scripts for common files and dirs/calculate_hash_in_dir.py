@@ -33,8 +33,11 @@ def process_file(file_path, result_dict, num_files):
     try:
         with open(file_path, "rb") as f:
             content = f.read()
-            sha256_hash = hashlib.sha256(content).hexdigest()
-            result_dict[file_path] = sha256_hash
+            if len(content) > 100:
+                sha256_hash = hashlib.sha256(content).hexdigest()
+                result_dict[file_path] = sha256_hash
+            else:
+                result_dict[file_path] = 0
     except Exception as e:
         result_dict[file_path] = str(e)
         
