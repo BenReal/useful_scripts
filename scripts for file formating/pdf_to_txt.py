@@ -16,7 +16,7 @@ from local_modules.local_functions import configure_logging
 from pdfminer.high_level import extract_text
 from hanziconv import HanziConv
 
-
+log_file_path = r'../logs/pdf_to_txt.log'
 configure_logging(log_file_path)
 
 # 记录日志信息

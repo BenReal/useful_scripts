@@ -12,11 +12,9 @@ else:
 import shutil
 import logging
 import time
-import re
 from local_modules.local_functions import configure_logging
 from pdfminer.high_level import extract_text
 from hanziconv import HanziConv
-from zenhan import z2h
 import multiprocessing
 
 
@@ -58,26 +56,17 @@ def remove_empty_lines(text):
     return '\n'.join(non_empty_lines)
 
 
-def process_extracted_text(text):
-    # 全部转换成半角字符
-    text = z2h(text)
-    # 将中文转为简体
-    text = HanziConv.toSimplified(text)
-    # 统一换行符格式
-    text = text.replace('\r\n', '\n').replace('\r', '\n')
-    # 处理多余的空格
-    text = re.sub("  +", " ", text)
-    # 删除中文字符后的空格
-    text = remove_spaces_after_chinese(text)
-    # 去除多余的空行
-    text = remove_empty_lines(text)
-    return text
-
-
 def convert_pdf_to_txt(file_path):
     try:
         text = extract_text(file_path)
-        text = process_extracted_text(text)
+        text = remove_empty_lines(text)
+        text = text.translate(str.maketrans(
+            "０１２３４５６７８９　ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ",
+            "0123456789 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+        ))
+
+        text = remove_spaces_after_chinese(text)
+        text = HanziConv.toSimplified(text)
 
         file_name = os.path.basename(file_path)
         pdf_directory = os.path.dirname(file_path)
@@ -108,7 +97,7 @@ def convert_pdf_to_txt_parallel(file_path):
 
 if __name__ == '__main__':
     multiprocessing.freeze_support()  # Add this line
-    folder_path = r"/Users/zhishui/god/【wargame】/待学习行研报告（军工类）"
+    folder_path = r"H:\测试"
     folder_path = os.path.normpath(folder_path)
 
     file_list = []
