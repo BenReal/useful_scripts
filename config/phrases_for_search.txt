@@ -1,18 +1,102 @@
-台湾
-台军
-taiwan
-无人机
-UAV
-UAS
-DRONE
-登陆
-登岛
-夺岛
-渡海
-两栖
-无人
-unmanned
-island landing
-landing operation
-island-ascending operation
-Cross-strait and Beach Landing
+人工智能
+智能
+Artificial Intelligence
+ AI 
+大模型
+Large-scale models
+航天侦察
+Space reconnaissance
+Space surveillance
+Space intelligence
+Space surveillance and reconnaissance
+Space-based reconnaissance
+侦察卫星
+Reconnaissance satellite
+Spy satellite
+Imaging satellite
+Earth observation satellite
+遥感技术
+Remote sensing technology
+Remote sensing
+Remote sensing imagery
+Remote sensing data
+高分辨率影像
+High-resolution imagery
+High-resolution satellite imagery
+High-resolution aerial imagery
+High-resolution remote sensing imagery
+目标识别
+Target recognition
+Object recognition
+Target detection
+Object detection
+特征提取
+Feature extraction
+Feature identification
+Feature recognition
+数据挖掘
+Data mining
+Data exploration
+Knowledge discovery
+Pattern discovery
+智能算法
+Intelligent algorithms
+Smart algorithms
+Advanced algorithms
+AI algorithms
+自主决策
+Autonomous decision-making
+Automated decision-making
+Intelligent decision-making
+实时监测
+Real-time monitoring
+Real-time surveillance
+Live monitoring
+Continuous monitoring
+机器视觉
+Computer vision
+Machine vision
+Vision-based systems
+空间探测
+Space exploration
+Space detection
+Space sensing
+数据处理
+Data manipulation
+Data handling
+Data management
+云计算
+Cloud computing
+Cloud-based processing
+Cloud infrastructure
+自适应系统
+Adaptive systems
+Intelligent systems
+Self-adjusting systems
+Responsive systems
+传感器技术
+Sensor technology
+Sensor systems
+Remote sensing sensors
+数据融合
+Data fusion
+Data integration
+Information fusion
+Sensor fusion
+空天联合侦察
+Space-air joint reconnaissance
+Space-air cooperation in reconnaissance
+卫星图像解译
+Satellite image interpretation
+Satellite image analysis
+Satellite image understanding
+机器学习
+Machine learning
+深度学习
+Deep learning
+模式识别
+Pattern recognition
+预测分析
+Predictive analytics
+智能辅助
+Intelligent assistance

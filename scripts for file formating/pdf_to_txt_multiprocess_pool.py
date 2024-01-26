@@ -91,10 +91,14 @@ def convert_pdf_to_txt(file_path):
 
     except Exception as e:
         print(f"Error converting {file_path}: {e}")
-        unknown_folder_path = os.path.join(folder_path, "未知问题文件")
-        os.makedirs(unknown_folder_path, exist_ok=True)
-        unknown_file_path = os.path.join(unknown_folder_path, file_name)
-        shutil.move(file_path, unknown_file_path)
+        file_name = os.path.basename(file_path)
+        pdf_directory = os.path.dirname(file_path)
+        exception_folder_path = os.path.join(pdf_directory, "未知问题文件")
+        # if not os.path.exists(exception_folder_path):
+        #     os.makedirs(exception_folder_path)
+        os.makedirs(exception_folder_path, exist_ok=True)
+        exception_file_path = os.path.join(exception_folder_path, file_name)
+        shutil.move(file_path, exception_file_path)
     # finally:
     #     print(f"完成转换：{file_path}")
 
@@ -108,13 +112,13 @@ def convert_pdf_to_txt_parallel(file_path):
 
 if __name__ == '__main__':
     multiprocessing.freeze_support()  # Add this line
-    folder_path = r"/Users/zhishui/god/【wargame】/待学习行研报告（军工类）"
+    folder_path = r"F:\总备份\文献库\中文文献库（pdf+txt）\文献组_3"
     folder_path = os.path.normpath(folder_path)
 
     file_list = []
     for root, dirs, files in os.walk(folder_path):
         for file in files:
-            if file.endswith(".pdf") or file.endswith(".PDF"):
+            if file.lower().endswith(".pdf"):
                 file_path = os.path.join(root, file)
                 file_list.append(file_path)
 

@@ -22,10 +22,10 @@ logging.info('程序开始运行')
 
 
 # 指定abc文件夹路径
-abc_folder = r"G:\资料检索\新建文件夹\新建文件夹"
+abc_folder = r"F:\总备份\文献库\中文文献库（pdf+txt）"
 
 # 每组文件的数量
-group_size = 50
+group_size = 3000
 
 # 创建子文件夹的计数器
 folder_counter = 1

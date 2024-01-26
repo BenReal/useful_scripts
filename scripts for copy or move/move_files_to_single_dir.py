@@ -60,15 +60,15 @@ def move_files_to_single_subdir(source_folder_path, target_folder_path, file_lis
 if __name__ == '__main__':
     # 文件夹路径
     # source_folder_path_list = [r"H:\无人机分布式自主蜂群+反无人机蜂群2023年11月29日2023年11月29日", ]
-    source_folder_path_list = [r"F:\总备份", ]
+    source_folder_path_list = [r"F:\总备份\文献库\中文文献库（pdf+txt）", ]
 
     # 移动目标子文件夹名称
     target_folder = r'待转移'
 
     # 文件名称是否添加扩展名标识符
-    # extension_add_symbol = 0 #不用添加扩展名
+    extension_add_symbol = 0 #不用添加扩展名
     # extension_add_symbol = 1 # 添加txt
-    extension_add_symbol = 2 # 添加pdf
+    # extension_add_symbol = 2 # 添加pdf
     # extension_add_symbol = 3 # 添加txt和pdf
 
     

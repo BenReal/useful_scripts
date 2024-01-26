@@ -37,8 +37,8 @@ def batch_convert_markdown_to_docx(input_directory, output_directory):
                 print(f"Processed {processed_files} of {total_files} files")
 
 if __name__ == "__main__":
-    input_directory = r"G:\科研机构\科研机构MD（分拆）正文\转换失败"
-    output_directory = r"G:\科研机构\科研机构MD（分拆）正文\转换失败"
+    input_directory = r"D:\用户目录\下载\新建文件夹 (2)"
+    output_directory = r"D:\用户目录\下载\新建文件夹 (2)"
 
     batch_convert_markdown_to_docx(input_directory, output_directory)
 

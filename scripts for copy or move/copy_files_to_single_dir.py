@@ -66,7 +66,7 @@ if __name__ == "__main__":
     configure_logging(log_file_path)
 
     # 文件夹路径
-    source_folder_path = r"H:\测试"
+    source_folder_path = r"F:\总备份\文献库"
     add_file_type = '.pdf'
     # add_file_type = '.txt'
     target_folder_name = "待转移"

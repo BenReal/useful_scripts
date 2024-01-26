@@ -47,7 +47,7 @@ def main():
     start_time = time.time()
 
     # Define source and destination folders
-    src_dir = r"G:\专题：无人抢滩登陆作战"
+    src_dir = r"E:\【美军出版物】"
     src_dir = os.path.normpath(src_dir)
     type_for_check = '.pdf'
     # type_for_check = '.txt'
