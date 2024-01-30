@@ -112,7 +112,7 @@ def convert_pdf_to_txt_parallel(file_path):
 
 if __name__ == '__main__':
     multiprocessing.freeze_support()  # Add this line
-    folder_path = r"F:\总备份\文献库\中文文献库（pdf+txt）\文献组_3"
+    folder_path = r"F:\总备份\文献库\S类文献（pdf+txt）\美国空军出版物"
     folder_path = os.path.normpath(folder_path)
 
     file_list = []

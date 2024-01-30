@@ -1,98 +1,211 @@
-f70015.pdf
-f70041.pdf
-f60173.pdf
-f60299.pdf
-f60476.pdf
-f60620.pdf
-f61014.pdf
-f61210.pdf
-f61307.pdf
-f61411.pdf
-f31792.pdf
-f33736.pdf
-f11072.pdf
-f51128.pdf
-f19199.pdf
-f51130.pdf
-f20325.pdf
-f19508.pdf
-f10065.pdf
-f36026.pdf
-f54241.pdf
-f22687.pdf
-f38745.pdf
-f62375.pdf
-f22577.pdf
-f19283.pdf
-f62418.pdf
-f21888.pdf
-f27492.pdf
-f21604.pdf
-f36183.pdf
-f38952.pdf
-f55706.pdf
-f50296.pdf
-f38040.pdf
-f17166.pdf
-f38312.pdf
-f48066.pdf
-f40325.pdf
-f40301.pdf
-f40058.pdf
-f38992.pdf
-f20856.pdf
-f23747.pdf
-f22763.pdf
-f43398.pdf
-f29108.pdf
-f25146.pdf
-f41293.pdf
-f25486.pdf
-f40644.pdf
-f41203.pdf
-f41244.pdf
-f41840.pdf
-f41979.pdf
-f44534.pdf
-f40804.pdf
-f40845.pdf
-f47279.pdf
-f44160.pdf
-f49344.pdf
-f52520.pdf
-f24094.pdf
-f29599.pdf
-f36020.pdf
-f31642.pdf
-f28937.pdf
-f27645.pdf
-f23607.pdf
-f29681.pdf
-f29676.pdf
-f16827.pdf
-f36508.pdf
-f29888.pdf
-f30382.pdf
-f53043.pdf
-f29713.pdf
-f71397.pdf
-f71550.pdf
-f71697.pdf
-f71732.pdf
-f72226.pdf
-f72448.pdf
-f65504.pdf
-f72607.pdf
-f72621.pdf
-f72630.pdf
-f72669.pdf
-f73309.pdf
-f73349.pdf
-f73352.pdf
-f73383.pdf
-f73384.pdf
-f73568.pdf
-f73734.pdf
-f73855.pdf
-f73941.pdf
-f73993.pdf
+e14202—atp 3-11-37 mcrp 10-10e-7 nttp 3-11-29 afttp 3-2-44 multi-service tactics, techniques, and procedures for chemical, biological, radiological, and nuclear reconnaissance and surveillance.txt
+e14205—atp 3-20.98 reconnaissance platoon.txt
+e14206—atp 3-20-15 (fm 3-20-15) tank platoon.txt
+e14207—atp 3-20-15 mcrp 3-10b-1 tank platoon.txt
+e14208—atp 3-20-97 cavalry troop.txt
+e14209—atp 3-20-98 scout platoon.txt
+e14213—atp 3-21-10 infantry rifle company.txt
+e14214—atp 3-21-20 infantry battalion.txt
+e14215—atp 3-21-21 sbct infantry battalion.txt
+e14216—atp 3-21-90 mctp 3-01d tactical employment of mortars.txt
+e14217—atp 3-21-91 stryker brigade combat team weapons troop.txt
+e14218—atp 3-34-80 geospatial engineering.txt
+e14220—atp 3-57-30 civil network development and engagement.txt
+e14221—atp 3-57-50 civil affairs civil information management.txt
+e14222—atp 3-57-80 civil-military engagement.txt
+e14226—atp 3-90-1 armor and mechanized infantry company team.txt
+e14227—atp 3-90-40 combined arms countering weapons of mass destruction.txt
+e14228—atp 3-90-5 combined arms battalion.txt
+e14229—atp 3-90-99 mctp 12-10d desert operations.txt
+e14231—atp 3-91-1 afttp 3-2-86 the joint air ground integration center.txt
+e14232—atp 3-92 corps operations.txt
+e14234—atp 3-94-2 deep operations.txt
+e14236—atp 3-96-1 security force assistance brigade.txt
+e14239—atp 4-32-1 explosive ordnance disposal (eod) group and battalion headquarters operations.txt
+e14246—atp 5-0-2-1 staff reference guide volume i unclassified resources.txt
+e14249—atp 6-02-54 techniques for satellite communications.txt
+e14250—atp 6-02-70 techniques for spectrum management operations.txt
+e14251—atp 6-02-71 techniques for department of defense information network operations.txt
+e14260—atp2-22-9.txt
+e14320—attp 3-21-50 infantry small-unit mountain operations.txt
+e14321—attp 3-21-90 (fm 7-90)-mcwp 3-15-2 tactical employment of mortars.txt
+e14333—attp3-97-11.txt
+e14335—attp4-10.txt
+e14995—cjcsi 3270.01c.txt
+e15004—cjcsm 3320.01c.txt
+e16401—fm 1-02 (fm 101-5-1) mcrp 5-12a operational terms and graphics.txt
+e16402—fm 1-02-1 operational terms.txt
+e16403—fm 2-01.3 mcrp 2-3a intelligence preparation of the battlefield-battlespace.txt
+e16404—fm 20-32 w ch 1-4.txt
+e16406—fm 3-01 u-s- army air and missile defense operations.txt
+e16407—fm 3-04 army aviation.txt
+e16410—fm 304-113 (fm 1113) utility and cargo helicopter operations.txt
+e16411—fm 304-126 february 2007 attack reconnaissance helicopter operations.txt
+e16412—fm 3-05 (fm 100-25) army special operations forces.txt
+e16413—fm 3-05-102 (fm 34-36) army special operations forces intelligence.txt
+e16414—fm 3-05-132 (fm 3-05-105) army special operations forces chemical, biological, radiological, and nuclear operations.txt
+e16415—fm 3-05-20 special forces operations.txt
+e16416—fm 3-05-30 mcrp 3-40-6 psychological operations.txt
+e16417—fm 3-05-401 mcrp 3-33-1a civil affairs tactics, techniques, and procedures.txt
+e16418—fm 3-09 fire support.txt
+e16419—fm 3-09 fire support and field artillery operations.txt
+e16420—fm 3-13 final web.txt
+e16423—fm 3-21.31 the stryker brigade combat team.txt
+e16424—fm 3-21-12 the infantry weapons company.txt
+e16425—fm 321-20 (fm 720) the infantry battalion.txt
+e16426—fm 34-1 intelligence and electronic warfare operations.txt
+e16428—fm 34-2 collection management and synchronization planning.txt
+e16431—fm 355-93 (fm 793) longrange surveillance unit operations.txt
+e16432—fm 3-55-93 (fm 7-93) long-range surveillance unit operations.txt
+e16433—fm 3-90-1 offense and defense volume 1.txt
+e16435—fm 3-96 brigade combat team.txt
+e16436—fm 399 airborne and air assault operations.txt
+e16437—fm 3-99 airborne and air assault operations.txt
+e16441—fm 6-02-43 signal soldier’s guide.txt
+e16442—fm 6-20-10 tactics, techniques, and procedures for the targeting process.txt
+e16443—fm 6-20-40 tactics, techniques, and procedures for fire support for brigade operations (heavy).txt
+e16444—fm 6-99 u-s- army report and message formats.txt
+e16445—fm 7-0 training.txt
+e16446—fm_34-54_technical_intelligence_fldxtxkmbe.txt
+e16447—fm1.txt
+e16450—fm100-2-2.txt
+e16451—fm100-2-3.txt
+e16453—fm1-02operationalterms.txt
+e16455—fm1-20 (2).txt
+e16456—fm12-50.txt
+e16458—fm2-0-2018.txt
+e16462—fm24-17.txt
+e16463—fm24-18.txt
+e16465—fm27-10.txt
+e16468—fm3_19_13.txt
+e16469—fm3_21x38.txt
+e16472—fm3_39.txt
+e16474—fm3_52 final web.txt
+e16476—fm3-01.11(00).txt
+e16480—fm3-05-211.txt
+e16481—fm3-05-213.txt
+e16484—fm3-05-70.txt
+e16485—fm3-07.txt
+e16488—fm3-11-11-excerpt.txt
+e16497—fm31930.txt
+e16503—fm3-25-26.txt
+e16518—fm3-6.txt
+e16519—fm3-61.txt
+e16525—fm4_01.txt
+e16527—fm4_30.txt
+e16528—fm4_40.txt
+e16533—fm4-02-51.txt
+e16537—fm4-95.txt
+e16541—fm6-02-70.txt
+e16542—fm6-22.txt
+e16545—fm8-284.txt
+e16546—fm8-9.txt
+e16547—fmf-core-material.txt
+e16552—fmi3-63-6.txt
+e16554—fmi4-93-41.txt
+e17936—joint publication 3-03 joint interdiction.txt
+e17937—joint publication 3-05 special operations.txt
+e17938—joint publication 3-05-1 joint special operations task force operations.txt
+e17939—joint publication 309 joint fire support.txt
+e17940—joint publication 3-09 joint fire support.txt
+e17942—joint publication 3-17 air mobility operations.txt
+e17943—joint publication 3-20 security cooperation.txt
+e17944—joint publication 3-50 personnel recovery.txt
+e17945—joint publication 3-52 joint airspace control.txt
+e17965—jp1_0.txt
+e17967—jp2_01.txt
+e17968—jp2_02.txt
+e17969—jp2-01-3.txt
+e17979—jp3 42.txt
+e17983—jp3_02.txt
+e17985—jp3_05_01.txt
+e17986—jp3_06.txt
+e17989—jp3_08.txt
+e17991—jp3_10.txt
+e17992—jp3_11.txt
+e17997—jp3_16.txt
+e17999—jp3_22.txt
+e18000—jp3_24.txt
+e18001—jp3_25.txt
+e18003—jp3_27.txt
+e18004—jp3_28.txt
+e18005—jp3_29.txt
+e18006—jp3_30.txt
+e18008—jp3_32 (2).txt
+e18009—jp3_34.txt
+e18011—jp3_40.txt
+e18012—jp3_41.txt
+e18015—jp3_57.txt
+e18017—jp3_61.txt
+e18021—jp3_80.txt
+e18022—jp3_84.txt
+e18023—jp3_85.txt
+e18033—jp4_03.txt
+e18034—jp4_04.txt
+e18035—jp4_05.txt
+e18038—jp4_10.txt
+e18600—mcdp 2.txt
+e18601—mcdp1-1.txt
+e18628—mcrp 2-10a-1 (formerly mcwp 2-22) signals intelligence.txt
+e18629—mcrp 210a-6 (formerly mcwp 225) ground reconnaissance operations.txt
+e18630—mcrp 2-10b.txt
+e18632—mcrp 2-10b-4 (formerly mcwp 2-26) geospatial information and intelligence.txt
+e18635—mcrp 2-3c z (2).txt
+e18639—mcrp 5-12d organization of marine corps forces.txt
+e18643—mctp 2-10a (2).txt
+e18644—mctp 2-10a (formerly mcwp 2-2) magtf intelligence collection.txt
+e18645—mctp 2-10b (formerly mcwp 2-3) magtf intelligence production and analysis.txt
+e18647—mctp 210b (formerly mcwp 23) u-s- marine corps magtf intelligence production and analysis.txt
+e18648—mctp 2-10c (formerly mcwp 2-4).txt
+e18650—mctp 3-10d (2).txt
+e18651—mctp 3-10f (formerly mcwp 3-16) fire support coordination in the ground combat element.txt
+e18653—mctp 3-20g gn (2).txt
+e18654—mcwp 2-10 (2).txt
+e18655—mcwp 2-12-1 geographic intelligence.txt
+e18656—mcwp 2-22 (formerly mcwp 2-15-2) signals intelligence.txt
+e18657—mcwp 2-25 (2).txt
+e18658—mcwp 2-25 ground reconnaissance operations.txt
+e18659—mcwp 225 usmc ground reconnaissance operations.txt
+e18663—mcwp 5-10 marine corps planning process.txt
+e18668—mcwp3 16 4.txt
+e18669—mcwp3-42-1.txt
+e20955—tc 2-19-01 military intelligence (mi) company and platoon reference guide.txt
+e20956—tc 3-04-11 commander’s aviation training and standardization program.txt
+e20957—tc 3-04-12 aviation mission planning forms.txt
+e20958—tc 3-04-4 fundamentals of flight.txt
+e20959—tc 3-09-31 (fm 3-09-31) fire support training for the brigade combat team commander.txt
+e20960—tc 3-20-0 integrated weapons training strategy (iwts).txt
+e20961—tc 3-20-11 training to proficiency maneuver company and troop.txt
+e20962—tc 3-22-91 mortar fire direction procedures.txt
+e20963—tc 5-340 air base damage repair (pavement repair).txt
+e20964—tc 7-100-2 opposing force tactics.txt
+e20965—tc 7-100-3 irregular opposing forces.txt
+e20967—tc12_44.txt
+e20969—tc21_305_20.txt
+e20972—tc26_6.txt
+e20974—tc3_04x62.txt
+e20975—tc3_09x81.txt
+e20978—tc3-21-75.txt
+e20979—tc3-21-76.txt
+e20981—tc3-22-90.txt
+e20984—tc3-97-61.txt
+e20986—tc4_13x17.txt
+e20987—tc5_210.txt
+e20992—tc7_100.txt
+e20993—tc7_100x4.txt
+e20994—tc7_101.txt
+e20996—tc7_21x10.txt
+e20998—tc7-100-4.txt
+e21007—tc90_1.txt
+e13026—afttp3-2.5.txt
+e13029—afttp3-2.67.txt
+e13030—afttp3-2.68.txt
+e13033—afttp3-2.8.txt
+e13036—afttp3-2.87.txt
+e14185—atp 2-01.txt
+e14186—atp 2-01.3 intelligence preparation of the battlefield.txt
+e14189—atp 3-01.81 counter-unmanned aircraft system (c-uas) august 2023.txt
+e14190—atp 3-01-8 techniques for combined arms for air defense.txt
+e14199—atp 3-09-12 field artillery counterfire and weapons locating radar operations.txt
+e14200—atp 3-09-23 (fm 3-09-21) field artillery cannon battalion.txt
+e14201—atp 3-09-42 fire support for the brigade combat team.txt

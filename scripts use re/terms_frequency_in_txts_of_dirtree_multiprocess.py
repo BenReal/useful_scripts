@@ -92,7 +92,7 @@ def main():
     results = count_phrases_in_directory_parallel(directory, patterns, phrases, file_type)
 
     # 保存到Excel文件
-    excel_file_name = "词频统计.xlsx"
+    excel_file_name = "腾云无人机词频统计.xlsx"
     excel_file_name = add_timestamp(excel_file_name)
     excel_path = directory / excel_file_name
     results.to_excel(excel_path, index=False)

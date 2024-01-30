@@ -1,13 +1,13 @@
 import os
 
-root_path = r"G:\专题：无人抢滩登陆作战\新建文件夹\重点"
+root_path = r"F:\总备份\文献库\S类文献（pdf+txt）\新建文件夹"
 
-with open("./config/names_old.txt", "r", encoding="utf8") as f_old:
+with open("./useful_scripts/config/names_old.txt", "r", encoding="utf8") as f_old:
     lines_old = f_old.readlines()
     old_names = [line.strip() for line in lines_old if line]
     # print(old_names)
 
-with open("./config/names_new.txt", "r", encoding="utf8") as f_new:
+with open("./useful_scripts/config/names_new.txt", "r", encoding="utf8") as f_new:
     lines_new = f_new.readlines()
     new_names = [line.strip() for line in lines_new if line]
     # print(new_names)

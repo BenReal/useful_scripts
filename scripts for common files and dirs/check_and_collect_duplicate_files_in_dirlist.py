@@ -46,9 +46,9 @@ def main():
     start_time = time.time()
 
     # Define source and destination folders
-    src_dirs = [r"F:\中转文件", r"F:\总备份\文献库",]
-    type_for_check = '.pdf'
-    # type_for_check = '.txt'
+    src_dirs = [r"F:\总备份\TXT文件", ]
+    # type_for_check = '.pdf'
+    type_for_check = '.txt'
     dst_dir = os.path.join(src_dirs[0], '重复文件')
 
     # Create destination folder if it does not exist
@@ -88,7 +88,7 @@ def main():
                         existing_file_len = len(os.path.basename(existing_file_path))
                         new_file_len = len(os.path.basename(file))
 
-                        if existing_file_len < new_file_len:
+                        if existing_file_len >= new_file_len:
                             logging.info(f"File '{existing_file_path}' is a duplicate of '{file_path}'. Moved '{existing_file_path}' to the destination folder.")
                             if not move_file(existing_file_path, dst_dir):
                                 continue
