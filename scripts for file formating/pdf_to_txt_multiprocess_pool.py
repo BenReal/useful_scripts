@@ -46,9 +46,6 @@ def remove_spaces_after_chinese(text):
         else:
             result.append(char)
             i += 1
-            if i < len(text) and text[i] == " ":
-                while i < len(text) and text[i] == " ":
-                    i += 1
     return ''.join(result)
 
 
@@ -112,7 +109,7 @@ def convert_pdf_to_txt_parallel(file_path):
 
 if __name__ == '__main__':
     multiprocessing.freeze_support()  # Add this line
-    folder_path = r"F:\总备份\文献库\S类文献（pdf+txt）\美国空军出版物"
+    folder_path = r"H:\测试"
     folder_path = os.path.normpath(folder_path)
 
     file_list = []

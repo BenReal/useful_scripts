@@ -12,7 +12,7 @@ def delete_empty_folders(folder_path):
                 print(f"已删除空文件夹并发送到回收站: {dir_path}")
 
 def main():
-    folder_path = r"G:\蜂群战术\无人机项目"
+    folder_path = r"F:\总备份\temp"
     delete_empty_folders(folder_path)
 
 if __name__ == '__main__':

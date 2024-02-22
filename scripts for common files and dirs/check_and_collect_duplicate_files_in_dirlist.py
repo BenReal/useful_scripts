@@ -39,16 +39,16 @@ def move_file(src, dst):
 
 def main():
     # Configure logging
-    log_file_path = r'../logs/find_and_move_duplicate_shortfiles.log'
+    log_file_path = r'./logs/find_and_move_duplicate_shortfiles.log'
     configure_logging(log_file_path)
 
     # Record start time
     start_time = time.time()
 
     # Define source and destination folders
-    src_dirs = [r"F:\总备份\TXT文件", ]
-    # type_for_check = '.pdf'
-    type_for_check = '.txt'
+    src_dirs = [r"G:\【项目】\美军军事训练2023年5月18日",  ]
+    type_for_check = '.pdf'
+    # type_for_check = '.txt'
     dst_dir = os.path.join(src_dirs[0], '重复文件')
 
     # Create destination folder if it does not exist
@@ -74,7 +74,7 @@ def main():
                     with open(file_path, 'rb') as f:
                         file_content = f.read()
                         len_file_content = len(file_content)
-                        if len_file_content < 10:
+                        if len_file_content < 200:
                             print(f"文本长度：{len_file_content}，不进行比对：{file_path}")
                             continue
                         else:
@@ -88,7 +88,7 @@ def main():
                         existing_file_len = len(os.path.basename(existing_file_path))
                         new_file_len = len(os.path.basename(file))
 
-                        if existing_file_len >= new_file_len:
+                        if existing_file_len <= new_file_len:
                             logging.info(f"File '{existing_file_path}' is a duplicate of '{file_path}'. Moved '{existing_file_path}' to the destination folder.")
                             if not move_file(existing_file_path, dst_dir):
                                 continue
